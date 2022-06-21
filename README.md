@@ -10,7 +10,7 @@ With the release of UR’s new e-Series, the demand for a ROS driver that suppor
 It is the core value of Universal Robots, to empower people to achieve any goal within automation. The success criteria of this driver release is to follow this vision, by providing the ROS community with an easy to use, stable and powerful driver, that empowers the community to reach their goals in research and automation without struggling with unimportant technical challenges, instability or lacking features.
 
 ## Acknowledgment
-This driver is forked from the [ur_modern_driver](https://github.com/ros-industrial/ur_modern_driver).
+This driver is forked from the [UniversalRobots](https://github.com/UniversalRobots/Universal_Robots_ROS_Driver).
 
 Developed in collaboration between:
 
@@ -128,10 +128,10 @@ $ source /opt/ros/<your_ros_version>/setup.bash
 $ mkdir -p catkin_ws/src && cd catkin_ws
 
 # clone the driver
-$ git clone https://github.com/UniversalRobots/Universal_Robots_ROS_Driver.git src/Universal_Robots_ROS_Driver
+$ git clone https://github.com/peppegti/Universal_Robots_ROS_Driver.git src/Universal_Robots_ROS_Driver
 
 # clone fork of the description. This is currently necessary, until the changes are merged upstream.
-$ git clone -b calibration_devel https://github.com/fmauch/universal_robot.git src/fmauch_universal_robot
+$ git clone -b calibration_devel https://github.com/peppegti/universal_robot.git src/fmauch_universal_robot
 
 # install dependencies
 $ sudo apt update -qq
