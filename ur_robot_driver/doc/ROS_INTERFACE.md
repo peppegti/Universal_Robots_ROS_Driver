@@ -65,6 +65,10 @@ tf_prefix used for the robot.
 
 Parameter to set the id of the wrench frame, required if using multiple robots
 
+##### speed_scaling_id (default: "speed_scaling_factor")
+
+Set the topic on which this robot publishes its speed scaling factor.
+
 ##### tool_baud_rate (default: "115200")
 
 Baud rate used for tool communication. Only used, when `use_tool_communication` is set to true.
@@ -731,6 +735,10 @@ Query whether there is currently a program running
 ##### dashboard/program_saved ([ur_dashboard_msgs/IsProgramSaved](http://docs.ros.org/api/ur_dashboard_msgs/html/srv/IsProgramSaved.html))
 
 Query whether the current program is saved
+
+##### dashboard/is_in_remote_control ([ur_dashboard_msgs/IsInRemoteControl](http://docs.ros.org/api/ur_dashboard_msgs/html/srv/IsInRemoteControl.html))
+
+Query whether the robot is currently in remote control mode. This is only available on e-Series models.
 
 ##### dashboard/program_state ([ur_dashboard_msgs/GetProgramState](http://docs.ros.org/api/ur_dashboard_msgs/html/srv/GetProgramState.html))
 
